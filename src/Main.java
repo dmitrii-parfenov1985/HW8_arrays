@@ -26,12 +26,24 @@ public class Main {
 
         System.out.println("\nЗадача 2");
         for (int i = 0; i < weight.length; i++) {
+            if (i == weight.length - 1) {
+                System.out.println(weight[i]);
+                break;
+            }
             System.out.print(weight[i] + ", ");
         }
-        for (double i = 0; i < first.length; i++) {
-            System.out.print(first[(int) i] + ", "); //Почему здесь джава предложила привести выражение к типу инт? Изначально я так : System.out.print(first[i] + ", "); но тогда выдаёт ошибку.
+        for (int i = 0; i < first.length; i++) {
+            if (i == first.length - 1) {
+                System.out.println(first[i]);
+                break;
+            }
+            System.out.print(first[i] + ", ");
         }
         for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                System.out.println(array[i]);
+                break;
+            }
             System.out.print(array[i] + ", ");
         }
         System.out.println();
@@ -44,13 +56,14 @@ public class Main {
         }
         for (int i = array.length - 1; i >= 0; i--) {
             System.out.print(array[i] + ", ");
-        } // Я не знаю как выводить с новой строки и не знаю как, не ставить запятую в конце строки. Буду рад подсказке.
+        }
         System.out.println();
         System.out.println("\nЗадача 4");
         for (int i = 0; i < weight.length; i++) {
             if (weight[i] % 2 != 0) {
-                weight[i] = i + 1;{
-                    System.out.println(i);// Не понимаю как это решить?
+                weight[i] = weight[i] + 1;
+                {
+                    System.out.println(i);
                 }
             }
         }
