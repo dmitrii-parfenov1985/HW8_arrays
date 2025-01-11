@@ -46,26 +46,34 @@ public class Main {
             }
             System.out.print(array[i] + ", ");
         }
-        System.out.println();
         System.out.println("\nЗадача 3");
         for (int i = weight.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(weight[i]);
+                break;
+            }
             System.out.print(weight[i] + ", ");
         }
         for (int i = first.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(first[i]);
+                break;
+            }
             System.out.print(first[i] + ", ");
         }
         for (int i = array.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(array[i]);
+                break;
+            }
             System.out.print(array[i] + ", ");
         }
-        System.out.println();
         System.out.println("\nЗадача 4");
         for (int i = 0; i < weight.length; i++) {
             if (weight[i] % 2 != 0) {
-                weight[i] = weight[i] + 1;
-                {
-                    System.out.println(i);
-                }
+                weight[i] += 1;
             }
+            System.out.println(weight[i]);
         }
     }
 }
