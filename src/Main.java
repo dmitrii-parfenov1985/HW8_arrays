@@ -73,7 +73,13 @@ public class Main {
             if (weight[i] % 2 != 0) {
                 weight[i] += 1;
             }
-            System.out.println(weight[i]);
+        }
+        for (int i = 0; i < weight.length; i++) {
+            if (i == weight.length - 1) {
+                System.out.println(weight[i]);
+                break;
+            }
+            System.out.println(weight[i] + ", ");
         }
     }
 }
